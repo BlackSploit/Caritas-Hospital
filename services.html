@@ -1,0 +1,374 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Carithas Hospital: Services</title>
+      <link type="image/x-icon" rel="shortcut icon" href="img/logo.svg">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
+  
+  <script>
+   $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > 50) {
+          $('.logo').addClass('emblem');
+      } else {
+          $('.logo').removeClass('emblem');
+      }
+   });
+</script> 
+
+  <script>
+   $(window).bind('scroll', function () {
+      if ($(window).scrollTop() > 50) {
+          $('.navbar-collapse').addClass('toping');
+      } else {
+          $('.navbar-collapse').removeClass('toping');
+      }
+   });
+</script> 
+
+
+
+
+
+
+
+ 
+		
+
+			
+
+	
+	
+	        <link href="css/style.css" rel="stylesheet"> 
+     
+   </head>
+   <body>
+      <header>
+<div class="topnav">
+<div class="container">
+
+<div class="logo"><a href="./index.html"><img src="img/logo.svg"><span class="altfont">Caritas St. <br><i>George Hospital</i></span></a></div> 
+
+<div class="calling">
+<a href="tel:+91 85909 90496"><span>Emergency number</span><b>+91 85909 90496</b></a>
+<a href="tel:+91 85909 90496"><span>Helpline number</span><b>+91 85909 90496</b></a>
+<!-- <a href="#" class="baa">Book Appointment</a> -->
+</div>
+<div class="btnnav">
+<a href="tel:+91 4842626018" class="btn">Make an Appointment</a>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+               <!--<li class="nav-item">
+            <a class="nav-link" href="#">Our specialities</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li> 
+  
+  <li class="nav-item">
+            <a class="nav-link" href="departments.html">Departments</a>
+          </li>
+  
+  <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>		
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+                  
+                  
+				  
+                   
+				    
+				  
+                	  
+	  
+	  <script>
+         var TxtType = function(el, toRotate, period) {
+                 this.toRotate = toRotate;
+                 this.el = el;
+                 this.loopNum = 0;
+                 this.period = parseInt(period, 7) || 2000;
+                 this.txt = '';
+                 this.tick();
+                 this.isDeleting = false;
+             };
+         
+             TxtType.prototype.tick = function() {
+                 var i = this.loopNum % this.toRotate.length;
+                 var fullTxt = this.toRotate[i];
+         
+                 if (this.isDeleting) {
+                 this.txt = fullTxt.substring(0, this.txt.length - 1);
+                 } else {
+                 this.txt = fullTxt.substring(0, this.txt.length + 1);
+                 }
+         
+                 this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+         
+                 var that = this;
+                 var delta = 100 - Math.random() * 100;
+         
+                 if (this.isDeleting) { delta /= 2; }
+         
+                 if (!this.isDeleting && this.txt === fullTxt) {
+                 delta = this.period;
+                 this.isDeleting = true;
+                 } else if (this.isDeleting && this.txt === '') {
+                 this.isDeleting = false;
+                 this.loopNum++;
+                 delta = 500;
+                 }
+         
+                 setTimeout(function() {
+                 that.tick();
+                 }, delta);
+             };
+         
+             window.onload = function() {
+                 var elements = document.getElementsByClassName('typewrite');
+                 for (var i=0; i<elements.length; i++) {
+                     var toRotate = elements[i].getAttribute('data-type');
+                     var period = elements[i].getAttribute('data-period');
+                     if (toRotate) {
+                       new TxtType(elements[i], JSON.parse(toRotate), period);
+                     }
+                 }
+                 // INJECT CSS
+                 var css = document.createElement("style");
+                 css.type = "text/css";
+                 css.innerHTML = ".typewrite > .wrap { border-right: solid 2px #ffffff73}";
+                 document.body.appendChild(css);
+             };
+      </script>
+	  
+		 
+<div class="servicebanner">
+ <div class="container"> 
+<h1 class="altfont">Our Services</h1>
+</div>
+<div class="slider">
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/slide1-3.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide1-2.jpg" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide1-3.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+</div>
+</div>
+	
+	      
+	<div class="serviceexpolore">
+	<div class="container">
+	<div class="row">
+
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img1.jpg"></div>
+	<h5>24 Hours Emergency Service</h5>
+	</div>
+	</div>
+
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img2.jpg"></div>
+	<h5>Women Health & Hygiene</h5>
+	</div>
+	</div>
+
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img3.jpg"></div>
+	<h5>E.N.T Care</h5>
+	</div>
+	</div>
+
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img4.jpg"></div>
+	<h5>Orthopedic Care</h5>
+	</div>
+	</div>
+  
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img5.jpg"></div>
+	<h5>Piles Clinic</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img6.jpg"></div>
+	<h5>Mental Health Care</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img7.jpg"></div>
+	<h5>Cardiology</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img8.jpg"></div>
+	<h5>Ventilators</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img9.jpg"></div>
+	<h5>Specialised Nursing Care</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img10.jpg"></div>
+	<h5>General & Specialty surgery</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img11.jpg"></div>
+	<h5>Anesthesia Unit</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img12.jpg"></div>
+	<h5>Digital X - Ray</h5>
+	</div>
+	</div>
+	<div class="col-md-6">
+	<div class="item">
+	<div class="thumb"><img src="img/services/img13.jpg"></div>
+	<h5>Pharmacy</h5>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	  
+  <footer>
+    <div class="container">
+    <div class="viscard">
+    <div class="item">
+    <!-- <img src="img/footerbg.jpg"> -->
+    
+    <div style="border-radius: 10px; padding: 20px; background: linear-gradient(-45deg, rgba(43, 91, 137, 1) 0%, rgba(193, 65, 58, 1) 100%); box-shadow: 0 0 15px rgba(43, 91, 137, 0.5), 0 0 15px rgba(193, 65, 58, 0.5); max-width: 600px; text-align: center;">
+      <p style="font-size: 20px; color: #ffffff; margin: 0;">
+        "Our full time consultant Doctors are working in different speciality Departments along with 7 part time consultants in super speciality departments and 24x7 Backup support from main caritas team."
+      </p>
+    </div>
+    
+    </div>
+    <div class="item">
+    <h5 class="altfont">Caritas St. George Hospital</h5>
+    <p>Thadiyampad - Mariyapuram Rd,<br>
+      Idukki Twp, Kerala <br>
+    Pin - 685602</p>
+    </div>
+    </div>
+    <div class="addressbox">
+    <div class="item">
+    <div class="head altfont">Phone Number</div>
+     <a href="tel:+91 85909 90496">+91 85909 90496</a>
+    </div>
+    
+    <div class="item">
+    <div class="head altfont">Email</div>
+     <a href="mailto:info@caritasstgeorgehospital.com">info@caritasstgeorgehospital.com</a>
+      <!-- <a href="mailto:hr@caritasstgeorgehospital.com" style="margin-top: -1.5vh;">hr@caritasstgeorgehospital.com</a>
+      <a href="mailto:ns@caritasstgeorgehospital.com" style="margin-top: -1.5vh;">ns@caritasstgeorgehospital.com</a> -->
+    </div>
+    <div class="item">
+    <div class="head altfont">Connect with us</div>
+    <div class="social">
+      
+      
+    <a href="#"><img src="img/facebook.png"></a>
+    <a href="#"><img src="img/insta.png"></a>
+    <a href="https://wa.me/+918590990496?text=Make%20An%20Appointment."><img src="img/wts.png"></a>
+    </div>
+    </div>
+    </div>
+    <div class="menu">
+    
+    
+    
+              <a href="index.html">Home</a>
+    
+              <a href="services.html">Services</a>
+    
+              <a href="departments.html">Departments</a>
+    
+              <a href="contact.html">Contact us</a>
+    
+    
+    
+    </div>
+    <div class="row justify-content-between menu">
+    
+        <div class="col-auto">
+            <a href="#">Copyright © 2024 caritashospital.com</a>
+        </div>
+      
+    </div>
+    </div>
+    </footer>  
+    
+
+
+ 
+ 
+  
+  
+   </body>
+</html>
