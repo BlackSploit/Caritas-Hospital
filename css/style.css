@@ -2055,3 +2055,15 @@ footer .menu a:hover {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #logoo {
+    border-bottom: 10px;
+  }
+  #phoney {
+    font-size: 0.6em;
+  }
+  #phoney1 {
+    font-size: 0.4em;
+  }
+}
