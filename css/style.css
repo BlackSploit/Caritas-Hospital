@@ -2067,3 +2067,10 @@ footer .menu a:hover {
     font-size: 0.4em;
   }
 }
+
+
+@media only screen and (max-width: 767px) {
+  #cond{
+    margin-left: 30vw !important;
+  }
+}
